@@ -1,98 +1,105 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  
-  header{
+}
+
+header {
     background-color: rgb(190, 138, 164);
     width: auto;
     height: 50px;
     padding-right: 50px;
     text-align: right;
     word-spacing: 50pt;
-  }
-  
-  header ul li {
+}
+
+header ul li {
     display: inline;
-  }
-  .reboteOut {
-    
+}
+
+.reboteOut {
+
     font-family: Arial;
     text-align: center;
     font-size: 50px;
     margin: 100px 50px;
-    
-  }
-  
-  
-  .reboteOut {
-   
+
+}
+
+
+.reboteOut {
+
     animation: reboteOut 1s infinite;
-   
-  }
-  
-  /* Creamos la animación (con keyframes) */
-  
-  @keyframes reboteOut {
-   
+
+}
+
+/* Creamos la animación (con keyframes) */
+
+@keyframes reboteOut {
+
     25% {
-      
-      transform: scale(0.9);
+
+        transform: scale(0.9);
     }
-    
+
     50% {
-       opacity: 1;
-       transform: scale(1.1);
+        opacity: 1;
+        transform: scale(1.1);
     }
-  
+
     100% {
-      
-       transform: scale(0.0);
-       opacity: 0;
-      
+
+        transform: scale(0.0);
+        opacity: 0;
+
     }
-  }
-  
-  body {
+}
+
+body {
     font-size: 120%;
     font-family: 'Dancing Script', cursive, sans-serif;
     color: rgba(0, 0, 0, 0.56);
-  
-  }
-  
-  :any-link{
+
+}
+
+:any-link {
     text-decoration: none;
     color: black;
-  }
-  header ul li{
+}
+
+header ul li {
     display: inline;
     padding: 50px;
-  }
-  h1{
+}
+
+h1 {
     padding: 60px;
     text-align: center;
-  }
-  p{
+}
+
+p {
     font-size: 150%;
     text-align: center;
     padding: 5px;
-  }
-  .centrar{
+}
+
+.centrar {
     width: 100%;
     margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .container{
+}
+
+.container {
     margin: 0;
     padding: 0;
     font-size: 80%;
     display: flex;
     width: 100%;
     justify-content: flex-end;
-  }
-  button{
+}
+
+button {
     font-size: 120%;
     font-family: 'Bree Serif';
     border: none;
@@ -100,10 +107,87 @@
     height: 40px;
     width: 300px;
     background-color: rgb(243, 166, 204);
-    color: rgba(0, 0, 0, 0.56);;   
-  }
-  .img{
+    color: rgba(0, 0, 0, 0.56);
+    ;
+}
+
+.img {
     word-spacing: 30px;
-    text-align: center;  
-  }
-  
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .centrar {
+        width: 100%;
+        height: 200;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: rgb(190, 138, 164);
+        width: auto;
+        height: 50px;
+        padding-right: 50px;
+        text-align: right;
+        word-spacing: 5pt;
+    }
+    header ul li {
+        display: inline;
+        padding: 20px;
+    }
+    .reboteOut {
+
+        font-family: Arial;
+        text-align: center;
+        font-size: 20px;
+        margin: 100px 50px;
+    
+    }
+    
+    
+    .reboteOut {
+    
+        animation: reboteOut 1s infinite;
+    
+    }
+    
+    /* Creamos la animación (con keyframes) */
+    
+    @keyframes reboteOut {
+    
+        25% {
+    
+            transform: scale(0.9);
+        }
+    
+        50% {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    
+        100% {
+    
+            transform: scale(0.0);
+            opacity: 0;
+    
+        }
+    }
+    
+    .col-10{
+        width: auto;
+    }
+
+    .col-2 {
+        display: none;
+    }
+
+    body {
+        font-size: 80%;
+        font-family: 'Dancing Script', cursive, sans-serif;
+        color: rgba(0, 0, 0, 0.56);
+}
+
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    background-color: rgb(190, 138, 164);
+    width: auto;
+    height: 50px;
+    padding-right: 50px;
+    text-align: right;
+    word-spacing: 50pt;
+  }
+  
+  header ul li {
+    display: inline;
+  }
+  .reboteOut {
+    
+    font-family: Arial;
+    text-align: center;
+    font-size: 50px;
+    margin: 100px 50px;
+    
+  }
+  
+  
+  .reboteOut {
+   
+    animation: reboteOut 1s infinite;
+   
+  }
+  
+  /* Creamos la animación (con keyframes) */
+  
+  @keyframes reboteOut {
+   
+    25% {
+      
+      transform: scale(0.9);
+    }
+    
+    50% {
+       opacity: 1;
+       transform: scale(1.1);
+    }
+  
+    100% {
+      
+       transform: scale(0.0);
+       opacity: 0;
+      
+    }
+  }
+  
+  body {
+    font-size: 120%;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    color: rgba(0, 0, 0, 0.56);
+  
+  }
+  
+  :any-link{
+    text-decoration: none;
+    color: black;
+  }
+  header ul li{
+    display: inline;
+    padding: 50px;
+  }
+  h1{
+    padding: 60px;
+    text-align: center;
+  }
+  p{
+    font-size: 150%;
+    text-align: center;
+    padding: 5px;
+  }
+  .centrar{
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container{
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  button{
+    font-size: 120%;
+    font-family: 'Bree Serif';
+    border: none;
+    border-radius: 60px;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(243, 166, 204);
+    color: rgba(0, 0, 0, 0.56);;   
+  }
+  .img{
+    word-spacing: 30px;
+    text-align: center;  
+  }
+  

@@ -5,11 +5,11 @@
 
 header {
     background-color: rgb(190, 138, 164);
-    width: auto;
+    width: 100%;
     height: 50px;
-    padding-right: 50px;
+    padding-right: 30px;
     text-align: right;
-    word-spacing: 50pt;
+    word-spacing: 20pt;
 }
 
 header ul li {
@@ -20,7 +20,7 @@ header ul li {
 
     font-family: Arial;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin: 100px 50px;
 
 }
@@ -77,17 +77,12 @@ h1 {
 }
 
 p {
-    font-size: 150%;
+    font-size: 120%;
     text-align: center;
     padding: 5px;
 }
-
-.centrar {
-    width: 100%;
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo{
+    padding: 70px;
 }
 
 .container {
@@ -107,24 +102,54 @@ button {
     height: 40px;
     width: 300px;
     background-color: rgb(243, 166, 204);
-    color: rgba(0, 0, 0, 0.56);
-    ;
+    color: rgba(0, 0, 0, 0.56);;
+    display: inline;
+    
+    
 }
+
 
 .img {
     word-spacing: 30px;
-    text-align: center;
+    text-align: center; 
+}
+footer{
+    padding: 12px;
 }
 
 @media (max-width: 768px) {
-    .centrar {
+    .container {
+        margin: 0;
+        padding: 0;
+        font-size: 80%;
         width: 100%;
-        height: 200;
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        
     }
+    
+    button {
+        font-size: 120%;
+        font-family: 'Bree Serif';
+        border: none;
+        border-radius: 60px;
+        height: 30px;
+        width: 150px;
+        background-color: rgb(243, 166, 204);
+        color: rgba(0, 0, 0, 0.56);;
+        display: inline;
+        text-align: center;
+    } 
+    .item-1{
+        margin: 40px;
+    }   
+   
+.centrar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.centrar img{
+    width: 100%;
+}
 
     header {
         background-color: rgb(190, 138, 164);
@@ -176,12 +201,11 @@ button {
         }
     }
     
-    .col-10{
-        width: auto;
-    }
 
-    .col-2 {
+    .col-6 {
         display: none;
+        
+
     }
 
     body {
